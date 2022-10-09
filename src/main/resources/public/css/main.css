@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+  color: #222;
+  line-height: 1.2;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  background: url("/img/background.jpg") no-repeat;
+  background-size: cover;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  place-content: center;
+  padding: 4rem 1rem 2rem 1rem;
+}
+
+main > section {
+  font-size: clamp(2rem, 5rem, 10vh);
+  font-weight: 600;
+  font-family: Montserrat;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  padding: 1rem 4rem;
+  color:white;
+}
+
+.small{
+  font-size:60%;
+}
+
+#logotype{
+  height: 15%;
+  min-height: 100px;
+  max-height: 400px;
+  padding: 3rem;
+}
+
+.create {
+  text-align: right;
+  font-size: 3rem;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+}
+
+input[type=text]{
+  min-width: 300px;
+}

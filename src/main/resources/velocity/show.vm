@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="UK">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="Super simple project for KPI course">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<header>
+  <a href="#" class="create" onclick="document.querySelector('#create').setAttribute('open','open')">⚙️</a>
+</header>
+
+  <main>
+    <section>
+       <div><img src='./img/$icon' id='logotype'></div>
+       <div>$text</div>
+    </section>
+            
+    #if ($stacktrace)
+     <pre>$stacktrace</pre>
+    #end
+
+    <dialog id="create">
+       <form method="POST" action="/">
+         <input type="text" name="message" placeholder="KEEP CALM AND ВІР В ЗСУ"/><br/>
+         <button type="submit">Створити</button>
+         <a href="#" onclick="document.querySelector('#create').removeAttribute('open')">Закрити</a>
+       </form>
+    </dialog>
+  </main>
+  <footer>
+    &copy; Kuzikov Borys for KPI course, 2022
+  </footer>
+</body>
+
+</html>
